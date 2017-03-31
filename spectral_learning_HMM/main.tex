@@ -28,7 +28,6 @@
 
 
 
-
 %opening
 \title{Spectral Learning in Hidden Markov Models}
 \author{Krishna Raj Devkota}
@@ -40,7 +39,7 @@
 \makeatletter
 	Universität Bielefeld\hfill Technische Fakultät\\[2cm]
 	\begin{center}
-		\textbf{\Large Probabilistic Models in Time Series Data}\\[1.5cm]
+		\textbf{\Large Probabilistic Models of Time Series Data}\\[1.5cm]
 		\textbf{\huge \@title }\\[1.5cm]
 		\Large \@author \\[2cm]
 		\Large \textbf{Instructor:}\\
@@ -53,17 +52,30 @@
 \newpage
 
 \begin{abstract}
-\section*{Abstract}
 
-HMM abstract goes here
+Recently, there has been a surge of interest in
+spectral algorithms for learning models of dynamical
+systems—for example, Hidden Markov Models
+(HMMs), Partially Observable Markov Decision Processes
+(POMDPs) etc., as well as latent variable models. These algorithms are attractive
+since they are statistically consistent and not subject
+to local optima. However, they are not perfect either and have their own shortcomings.
+\newline
+\newline
+In this paper, we will look into traditional inference methods, and how the limitations they pose gave rise to a new branch of methods to estimate parameters in a dynamical system, as well as other variants of latent variable models, while particularly focusing on Hidden Markov Models. 
+\newline
+\newline
+We will review briefly both the parametric case and the non parametric case, and in light of the older EM techniques, try to argue whether or not these spectral methods are better than the widely adopted traditional (i.e. MLE, EM) approaches.
 
 \end{abstract}
+
 \newpage
 
 {\hypersetup{linkcolor=black}
 \tableofcontents}
 
 \newpage
+
 
 \section{Introduction}
 \input{introduction}

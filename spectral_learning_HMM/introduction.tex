@@ -1,9 +1,16 @@
 In applied statistics and machine learning, mixture models are a fundamental tool for treating data taken from multiple subpopulations \cite{ref3}. The data in a mixture model is generated from a number of likely sources, and to identify the nature of the individual sources is one of the goals when dealing with such models. As such, estimating the unknown parameters of the mixture model from sampled data—and particularly, the parameters of the underlying constituent distributions—is an important statistical task. 
 
-In the following sections, starting with a brief general overview, we will look into the commonly adapted practices in the field, the limitations they present, and go on to explore how newer approaches are evolving over time, and the challenges they present. 
+The reliability of various partially observable dynamical system models, and latent variable models also depend on successful estimation of the underlying parameters.
 
-In section two, we talk about the need and methods for parameter estimation in latent variable models. In section three we explore different proposed methods to solve the problems encountered in the parameter estimation problem expecially for HMMs. In section four, we discuss the algorithms developed for learning HMMs, and their drawbacks. Section five discusses the ......
+For discrete observations, Hidden Markov models have been widely used to represent belief as a discrete distribution over latent states. Under certain controlled conditions, alternate representations (\textit{i.e. Predictive State Representations (PSRs)} \cite{ref30}, \textit{Observable Operator Models(OOMs)} \cite{ref9} ) of Hidden Markov models have also been used for easier inference.
 
+These alternate representations have inspired various spectral learning approaches, which we will look into as we go further down this paper. And coupled with some major advantages such as statistical consistency, easier implementation using simple linear algebra routines, these novel approaches are critically acclaimed day by day. 
+
+Despite these attractive features, many older spectral algorithms are batch methods (needing to store their entire training data set in memory at once) instead of on-line ones.\cite{ref31} However, there are newer algorithms with online learning approaches which can scale to much larger data sets and more complex systems than previous methods.
+
+Although there has been promising progress in parametric cases, where the distribution of the observations conditioned on the latent variables belongs to a parametric family, much is still left to be done for the non-parametric case. 
+
+The rest of the paper is organized as follows: section two gives a general overview of the parameter estimation problem in different latent variable models, in section three we discuss briefly about HMMs and the relevant alternate representations of HMMs, then we move on to section four where we talk about spectral learning approach, including the required framework to develop a spectral learning algorithm, and newer domains that the approach has covered, and in the last section i.e. section five, we discuss the results, concluding with the present limitations, and the possibilities for future work.   
 
 
 \section{Parameter estimation in latent-variable models}
