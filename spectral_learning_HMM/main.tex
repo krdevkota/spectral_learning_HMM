@@ -1,0 +1,84 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{breakurl}
+\usepackage[colorlinks, linkcolor=black!20!red, citecolor=black!30!green]{hyperref}
+\usepackage{xcolor}
+\usepackage{gensymb}
+\usepackage[parfill]{parskip}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows, fit}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{tabto}
+\graphicspath{ {Figures/} }
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=black,
+}
+ 
+\urlstyle{same}
+
+
+
+
+%opening
+\title{Spectral Learning in Hidden Markov Models}
+\author{Krishna Raj Devkota}
+
+\begin{document}
+
+\pagestyle{empty}
+\begin{titlepage}
+\makeatletter
+	Universität Bielefeld\hfill Technische Fakultät\\[2cm]
+	\begin{center}
+		\textbf{\Large Probabilistic Models in Time Series Data}\\[1.5cm]
+		\textbf{\huge \@title }\\[1.5cm]
+		\Large \@author \\[2cm]
+		\Large \textbf{Instructor:}\\
+		\Large Jan Pöppel\\[2cm]
+		\Large\today
+	\end{center}
+\makeatother
+\end{titlepage}
+
+\newpage
+
+\begin{abstract}
+\section*{Abstract}
+
+HMM abstract goes here
+
+\end{abstract}
+\newpage
+
+{\hypersetup{linkcolor=black}
+\tableofcontents}
+
+\newpage
+
+\section{Introduction}
+\input{introduction}
+
+
+\section{Experimental Results and Discussion}
+\input{result_conclusion}
+
+\newpage 
+
+%\input{bibliography}
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+
+
+\end{document}
